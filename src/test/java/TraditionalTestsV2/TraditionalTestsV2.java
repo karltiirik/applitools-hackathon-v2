@@ -1,8 +1,8 @@
 package TraditionalTestsV2;
 
-import TraditionalTestsV1.pageobjects.DetailsPage;
-import TraditionalTestsV1.pageobjects.MainPage;
-import TraditionalTestsV1.util.HackathonReporter;
+import TraditionalTestsV2.pageobjects.DetailsPage;
+import TraditionalTestsV2.pageobjects.MainPage;
+import TraditionalTestsV2.util.HackathonReporter;
 import com.codeborne.selenide.*;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
@@ -11,7 +11,7 @@ import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static TraditionalTestsV1.pageobjects.MainPage.Color;
+import static TraditionalTestsV2.pageobjects.MainPage.Color;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.open;
 
