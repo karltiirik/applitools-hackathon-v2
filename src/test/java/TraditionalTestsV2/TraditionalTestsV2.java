@@ -161,9 +161,14 @@ public class TraditionalTestsV2 {
         softAssert("Items in cart count is displayed", mainPage.itemsInCartCount, visible);
 
         softAssert("Shoe name is Appli Air x Night", detailsPage.shoeName, text("Appli Air x Night"));
-        softAssert("Shoe image is displayed", detailsPage.shoeImage, visible);
+        // Hack-y way to check if item is actually visible
+        softAssert("Shoe image is displayed", detailsPage.shoeImage,
+                and("visible", visible, not(cssValue("background-image", "none"))));
         softAssert("Shoe rating is displayed", detailsPage.rating, visible);
-        softAssert("Item code is displayed", detailsPage.itemCode, visible);
+        // Hack-y way to check if item is actually visible
+        String expectedCssValue = browser == Browsers.FIREFOX ? "rgb(255, 255, 255)" : "rgba(255, 255, 255, 1)";
+        softAssert("Item code is displayed", detailsPage.itemCode,
+                and("visible", visible, not(cssValue("color", expectedCssValue))));
         softAssert("Selected size is Small (S)", detailsPage.selectedSize, text("Small (S)"));
         softAssert("Selected quantity is 1", detailsPage.selectedQuantity, value("1"));
         softAssert("New price is $33.00", detailsPage.newPrice, text("$33.00"));
@@ -171,7 +176,7 @@ public class TraditionalTestsV2 {
         softAssert("Discount is -30% discount", detailsPage.discount, text("-30% discount"));
 
         // Hack-y way to check text design
-        String expectedCssValue = browser == Browsers.FIREFOX ?
+        expectedCssValue = browser == Browsers.FIREFOX ?
                 "line-through rgb(153, 153, 153)" : "line-through solid rgb(153, 153, 153)";
         softAssert("Old price should be gray and strikethrough", detailsPage.oldPrice,
                 cssValue("text-decoration", expectedCssValue));

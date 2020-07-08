@@ -25,8 +25,8 @@ public class MainPage {
     public SelenideElement filtersSidebar = $("#sidebar_filters");
 
     public SelenideElement filtersBtn = $("#ti-filter");
-    public SelenideElement viewGridIcon = $("#I__tiviewgrid__202");
-    public SelenideElement viewListIcon = $("#I__tiviewlist__204");
+    public SelenideElement viewGridIcon = $("#I__tiviewgrid__203");
+    public SelenideElement viewListIcon = $("#I__tiviewlist__205");
 
     public SelenideElement productGrid = $("#product_grid");
 
@@ -34,9 +34,9 @@ public class MainPage {
     public SelenideElement addToCompareBtn = $("#I__ticontrols__229");
     public SelenideElement addToCartBtn = $("#I__tishopping__233");
 
-    public SelenideElement quickLinksFooterMenuItem = $("#H3____421");
-    public SelenideElement contactsFooterMenuItem = $("#H3____437");
-    public SelenideElement keepInTouchMenuItem = $("#H3____447");
+    public SelenideElement quickLinksFooterMenuItem = $("#H3__opened__422");
+    public SelenideElement contactsFooterMenuItem = $("#H3____438");
+    public SelenideElement keepInTouchMenuItem = $("#H3____448");
 
     public MainPage openFiltersIfNotVisible() {
         if (filtersSidebar.is(Condition.not(Condition.visible))) {
