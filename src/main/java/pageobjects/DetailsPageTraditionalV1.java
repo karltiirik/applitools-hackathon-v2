@@ -14,7 +14,7 @@ public class DetailsPageTraditionalV1 {
     public SelenideElement rating = $("#SPAN__rating__76");
 
     public SelenideElement selectedSize = $("#DIV__colxlcollg__91");
-    public SelenideElement selectedQuantity = $("#DIV__colxlcollg__101");
+    public SelenideElement selectedQuantity = $("#quantity_1");
 
     public SelenideElement newPrice = $("#new_price");
     public SelenideElement oldPrice = $("#old_price");

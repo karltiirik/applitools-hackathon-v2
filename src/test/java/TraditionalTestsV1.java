@@ -152,6 +152,7 @@ public class TraditionalTestsV1 {
         softAssert("Shoe rating is displayed", detailsPage.rating, visible);
         softAssert("Item code is displayed", detailsPage.itemCode, visible);
         softAssert("Selected size is Small (S)", detailsPage.selectedSize, text("Small (S)"));
+        softAssert("Selected quantity is 1", detailsPage.selectedQuantity, value("1"));
         softAssert("New price is $33.00", detailsPage.newPrice, text("$33.00"));
         softAssert("Old price is $48.00", detailsPage.oldPrice, text("$48.00"));
         softAssert("Discount is -30% discount", detailsPage.discount, text("-30% discount"));
