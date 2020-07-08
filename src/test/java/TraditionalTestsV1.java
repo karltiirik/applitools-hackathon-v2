@@ -64,7 +64,7 @@ public class TraditionalTestsV1 {
             softAssert("View grid icon is displayed", mainPage.viewGridIcon, visible);
             softAssert("View list icon is displayed", mainPage.viewListIcon, visible);
 
-            softAssert("Product add to favorite button is not displayed", mainPage.filtersBtn, hidden);
+            softAssert("Product add to favorite button is not displayed", mainPage.addToFavoriteBtn, hidden);
             softAssert("Product add to compare button is not displayed", mainPage.addToCompareBtn, hidden);
             softAssert("Product add to cart button is not displayed", mainPage.addToCartBtn, hidden);
 
@@ -125,6 +125,17 @@ public class TraditionalTestsV1 {
             } else {
                 softAssert(i + 1 + ". result should not be shown", mainPage.getGridItemElement(i), hidden);
             }
+        }
+
+        // Specific to Laptops viewport
+        if (device == "Laptop") {
+            softAssert("Product add to favorite button is not displayed", mainPage.addToFavoriteBtn, hidden);
+            softAssert("Product add to compare button is not displayed", mainPage.addToCompareBtn, hidden);
+            softAssert("Product add to cart button is not displayed", mainPage.addToCartBtn, hidden);
+        } else {
+            softAssert("Product add to favorite button is displayed", mainPage.addToFavoriteBtn, visible);
+            softAssert("Product add to compare button is displayed", mainPage.addToCompareBtn, visible);
+            softAssert("Product add to cart button is displayed", mainPage.addToCartBtn, visible);
         }
     }
 
