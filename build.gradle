@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'com.adarshr.test-logger' version '2.0.0'
 }
 
 version '1.0-SNAPSHOT'
@@ -21,5 +22,4 @@ dependencies {
     implementation 'com.applitools:eyes-selenium-java3:3.158.5'
     // Wrapper around Selenium for better browser control
     compile 'com.codeborne:selenide:5.12.2'
-
 }
