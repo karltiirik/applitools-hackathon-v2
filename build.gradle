@@ -13,6 +13,10 @@ repositories {
 dependencies {
     // Test runner
     testCompile group: 'junit', name: 'junit', version: '4.13'
+    // For easy parameterized tests
+    testCompile 'pl.pragmatists:JUnitParams:1.1.1'
+    // For fluent assertions
+    testImplementation("org.assertj:assertj-core:3.16.1")
     // Applitools Selenium Java SDK
     implementation 'com.applitools:eyes-selenium-java3:3.158.5'
     // Wrapper around Selenium for better browser control
