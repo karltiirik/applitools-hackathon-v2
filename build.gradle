@@ -23,3 +23,7 @@ dependencies {
     // Wrapper around Selenium for better browser control
     compile 'com.codeborne:selenide:5.12.2'
 }
+
+testlogger {
+    slowThreshold 30000
+}
