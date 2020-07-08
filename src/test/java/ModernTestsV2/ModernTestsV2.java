@@ -1,3 +1,5 @@
+package ModernTestsV2;
+
 import com.applitools.eyes.BatchInfo;
 import com.applitools.eyes.RectangleSize;
 import com.applitools.eyes.TestResultsSummary;
@@ -12,9 +14,9 @@ import com.codeborne.selenide.WebDriverRunner;
 import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import pageobjects.MainPageModern;
+import ModernTestsV2.pageobjects.MainPageModern;
 
-import static pageobjects.MainPageModern.Color;
+import static ModernTestsV2.pageobjects.MainPageModern.Color;
 
 public class ModernTestsV2 {
 

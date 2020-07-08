@@ -1,10 +1,10 @@
-package pageobjects;
+package TraditionalTestsV1.pageobjects;
 
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class DetailsPageTraditionalV1 {
+public class DetailsPage {
 
     // COMMENT: I'd use use more stable locator strategies (like class names or data attributes),
     // but the Hackathon rules limited to only use Id-s

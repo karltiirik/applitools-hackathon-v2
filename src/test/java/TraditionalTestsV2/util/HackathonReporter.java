@@ -1,4 +1,4 @@
-package util;
+package TraditionalTestsV2.util;
 
 import com.codeborne.selenide.SelenideElement;
 

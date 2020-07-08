@@ -1,3 +1,8 @@
+package TraditionalTestsV1;
+
+import TraditionalTestsV1.pageobjects.DetailsPage;
+import TraditionalTestsV1.pageobjects.MainPage;
+import TraditionalTestsV1.util.HackathonReporter;
 import com.codeborne.selenide.*;
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
@@ -5,13 +10,10 @@ import org.assertj.core.api.SoftAssertions;
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import pageobjects.DetailsPageTraditionalV1;
-import pageobjects.MainPageTraditionalV1;
-import util.HackathonReporter;
 
+import static TraditionalTestsV1.pageobjects.MainPage.Color;
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selenide.open;
-import static pageobjects.MainPageTraditionalV1.Color;
 
 @RunWith(JUnitParamsRunner.class)
 public class TraditionalTestsV1 {
@@ -19,7 +21,7 @@ public class TraditionalTestsV1 {
     static int appVersion = 1;
     static String url = String.format("https://demo.applitools.com/gridHackathonV%s.html", appVersion);
 
-    private MainPageTraditionalV1 mainPage = new MainPageTraditionalV1();
+    private MainPage mainPage = new MainPage();
     private SoftAssertions softAssertions;
     private HackathonReporter reporter;
 
@@ -146,7 +148,7 @@ public class TraditionalTestsV1 {
         open(url);
         reporter = new HackathonReporter(appVersion, 3, browser, String.format("%s x %s", viewPortWidth, viewPortHeight), device);
 
-        DetailsPageTraditionalV1 detailsPage = mainPage.openFiltersIfNotVisible()
+        DetailsPage detailsPage = mainPage.openFiltersIfNotVisible()
                 .selectColor(Color.BLACK)
                 .filter()
                 .openProductDetails(0);

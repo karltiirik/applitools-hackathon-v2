@@ -1,4 +1,4 @@
-package pageobjects;
+package TraditionalTestsV2.pageobjects;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.ElementsCollection;
@@ -6,7 +6,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selenide.$;
 
-public class MainPageTraditionalV2 {
+public class MainPage {
 
     // COMMENT: I'd use use more stable locator strategies (like class names or data attributes),
     // but the Hackathon rules limited to only use Id-s
@@ -38,26 +38,26 @@ public class MainPageTraditionalV2 {
     public SelenideElement contactsFooterMenuItem = $("#H3____437");
     public SelenideElement keepInTouchMenuItem = $("#H3____447");
 
-    public MainPageTraditionalV2 openFiltersIfNotVisible() {
+    public MainPage openFiltersIfNotVisible() {
         if (filtersSidebar.is(Condition.not(Condition.visible))) {
             filtersBtn.click();
         }
         return this;
     }
 
-    public MainPageTraditionalV2 selectColor(Color color) {
+    public MainPage selectColor(Color color) {
         $(color.getLocator()).click();
         return this;
     }
 
-    public MainPageTraditionalV2 filter() {
+    public MainPage filter() {
         $("#filterBtn").click();
         return this;
     }
 
-    public DetailsPageTraditionalV2 openProductDetails(int productIndex) {
+    public DetailsPage openProductDetails(int productIndex) {
         getGridItems().get(productIndex).click();
-        return new DetailsPageTraditionalV2();
+        return new DetailsPage();
     }
 
     public ElementsCollection getGridItems() {

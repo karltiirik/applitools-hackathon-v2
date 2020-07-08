@@ -1,4 +1,4 @@
-package pageobjects;
+package ModernTestsV1.pageobjects;
 
 import static com.codeborne.selenide.Selenide.$;
 
