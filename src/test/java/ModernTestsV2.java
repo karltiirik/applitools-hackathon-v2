@@ -17,7 +17,7 @@ import static pageobjects.MainPageModern.Color;
 
 public class ModernTestsV2 {
 
-    static int appVersion = 1;
+    static int appVersion = 2;
     static String url = String.format("https://demo.applitools.com/gridHackathonV%s.html", appVersion);
 
     static Eyes eyes;
