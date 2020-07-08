@@ -18,8 +18,8 @@ import static com.codeborne.selenide.Selenide.open;
 @RunWith(JUnitParamsRunner.class)
 public class TraditionalTestsV1 {
 
-    static int appVersion = 1;
-    static String url = String.format("https://demo.applitools.com/gridHackathonV%s.html", appVersion);
+    private static int appVersion = 1;
+    private static String url = String.format("https://demo.applitools.com/gridHackathonV%s.html", appVersion);
 
     private MainPage mainPage = new MainPage();
     private SoftAssertions softAssertions;
@@ -58,7 +58,7 @@ public class TraditionalTestsV1 {
         softAssert("Cart button is displayed", mainPage.cartBtn, visible);
 
         // Specific to Laptops viewport
-        if (device == "Laptop") {
+        if (device.equals("Laptop")) {
             softAssert("Main menu is displayed", mainPage.mainMenu, visible);
             softAssert("Filters sidebar is displayed", mainPage.filtersSidebar, visible);
 
@@ -87,7 +87,7 @@ public class TraditionalTestsV1 {
         }
 
         // Specific to Mobile viewport
-        if (device == "Mobile") {
+        if (device.equals("Mobile")) {
             softAssert("Search field is not displayed", mainPage.searchField, hidden);
             softAssert("Submit search button is not displayed", mainPage.submitSearchBtn, hidden);
             softAssert("Open search button is displayed", mainPage.openSearchButton, visible);
@@ -130,7 +130,7 @@ public class TraditionalTestsV1 {
         }
 
         // Specific to Laptops viewport
-        if (device == "Laptop") {
+        if (device.equals("Laptop")) {
             softAssert("Product add to favorite button is not displayed", mainPage.addToFavoriteBtn, hidden);
             softAssert("Product add to compare button is not displayed", mainPage.addToCompareBtn, hidden);
             softAssert("Product add to cart button is not displayed", mainPage.addToCartBtn, hidden);
@@ -171,7 +171,7 @@ public class TraditionalTestsV1 {
         softAssert("Discount is -30% discount", detailsPage.discount, text("-30% discount"));
 
         // Hack-y way to check text design
-        String expectedCssValue = browser == Browsers.FIREFOX ?
+        String expectedCssValue = browser.equals(Browsers.FIREFOX) ?
                 "line-through rgb(153, 153, 153)" : "line-through solid rgb(153, 153, 153)";
         softAssert("Old price should be gray and strikethrough", detailsPage.oldPrice,
                 cssValue("text-decoration", expectedCssValue));
