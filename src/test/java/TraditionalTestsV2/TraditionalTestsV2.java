@@ -186,7 +186,7 @@ public class TraditionalTestsV2 {
 
     @After
     public void tearDown() {
-        softAssertions.assertAll();
         Selenide.closeWindow();
+        softAssertions.assertAll();
     }
 }
