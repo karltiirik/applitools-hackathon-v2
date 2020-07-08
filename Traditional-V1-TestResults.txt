@@ -6,7 +6,7 @@ Task: 1, Test Name: Filters sidebar is displayed, DOM Id: sidebar_filters, Brows
 Task: 1, Test Name: Filters button is not displayed, DOM Id: ti-filter, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: View grid icon is displayed, DOM Id: I__tiviewgrid__202, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: View list icon is displayed, DOM Id: I__tiviewlist__204, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
-Task: 1, Test Name: Product add to favorite button is not displayed, DOM Id: ti-filter, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: Product add to favorite button is not displayed, DOM Id: I__tiheart__225, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Product add to compare button is not displayed, DOM Id: I__ticontrols__229, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Product add to cart button is not displayed, DOM Id: I__tishopping__233, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Wishlist button is displayed, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
@@ -21,7 +21,7 @@ Task: 1, Test Name: Filters sidebar is displayed, DOM Id: sidebar_filters, Brows
 Task: 1, Test Name: Filters button is not displayed, DOM Id: ti-filter, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: View grid icon is displayed, DOM Id: I__tiviewgrid__202, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: View list icon is displayed, DOM Id: I__tiviewlist__204, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
-Task: 1, Test Name: Product add to favorite button is not displayed, DOM Id: ti-filter, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: Product add to favorite button is not displayed, DOM Id: I__tiheart__225, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Product add to compare button is not displayed, DOM Id: I__ticontrols__229, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Product add to cart button is not displayed, DOM Id: I__tishopping__233, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Wishlist button is displayed, DOM Id: A__wishlist__52, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
@@ -36,7 +36,7 @@ Task: 1, Test Name: Filters sidebar is displayed, DOM Id: sidebar_filters, Brows
 Task: 1, Test Name: Filters button is not displayed, DOM Id: ti-filter, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: View grid icon is displayed, DOM Id: I__tiviewgrid__202, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: View list icon is displayed, DOM Id: I__tiviewlist__204, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
-Task: 1, Test Name: Product add to favorite button is not displayed, DOM Id: ti-filter, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 1, Test Name: Product add to favorite button is not displayed, DOM Id: I__tiheart__225, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Product add to compare button is not displayed, DOM Id: I__ticontrols__229, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Product add to cart button is not displayed, DOM Id: I__tishopping__233, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 1, Test Name: Wishlist button is displayed, DOM Id: A__wishlist__52, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
@@ -109,18 +109,39 @@ Task: 1, Test Name: Contacts footer menu item is collapsed, DOM Id: H3____437, B
 Task: 1, Test Name: Keep in touch footer menu item is collapsed, DOM Id: H3____447, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to favorite button is not displayed, DOM Id: I__tiheart__225, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to compare button is not displayed, DOM Id: I__ticontrols__229, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to cart button is not displayed, DOM Id: I__tishopping__233, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to favorite button is not displayed, DOM Id: I__tiheart__225, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to compare button is not displayed, DOM Id: I__ticontrols__229, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to cart button is not displayed, DOM Id: I__tishopping__233, Browser: Firefox, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to favorite button is not displayed, DOM Id: I__tiheart__225, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to compare button is not displayed, DOM Id: I__ticontrols__229, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
+Task: 2, Test Name: Product add to cart button is not displayed, DOM Id: I__tishopping__233, Browser: Edge, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to favorite button is displayed, DOM Id: I__tiheart__225, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to compare button is displayed, DOM Id: I__ticontrols__229, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to cart button is displayed, DOM Id: I__tishopping__233, Browser: Chrome, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to favorite button is displayed, DOM Id: I__tiheart__225, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to compare button is displayed, DOM Id: I__ticontrols__229, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to cart button is displayed, DOM Id: I__tishopping__233, Browser: Firefox, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Edge, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Edge, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to favorite button is displayed, DOM Id: I__tiheart__225, Browser: Edge, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to compare button is displayed, DOM Id: I__ticontrols__229, Browser: Edge, Viewport: 768 x 700, Device: Tablet, Status: Pass
+Task: 2, Test Name: Product add to cart button is displayed, DOM Id: I__tishopping__233, Browser: Edge, Viewport: 768 x 700, Device: Tablet, Status: Pass
 Task: 2, Test Name: 1. result should be shown, DOM Id: DIV__griditem__211, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
 Task: 2, Test Name: 2. result should be shown, DOM Id: DIV__griditem__236, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
+Task: 2, Test Name: Product add to favorite button is displayed, DOM Id: I__tiheart__225, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
+Task: 2, Test Name: Product add to compare button is displayed, DOM Id: I__ticontrols__229, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
+Task: 2, Test Name: Product add to cart button is displayed, DOM Id: I__tishopping__233, Browser: Chrome, Viewport: 500 x 700, Device: Mobile, Status: Pass
 Task: 3, Test Name: Profile button is displayed, DOM Id: A__accesslink__56, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 3, Test Name: Wishlist button is displayed, DOM Id: A__wishlist__52, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
 Task: 3, Test Name: Cart button is displayed, DOM Id: A__cartbt__49, Browser: Chrome, Viewport: 1200 x 700, Device: Laptop, Status: Pass
