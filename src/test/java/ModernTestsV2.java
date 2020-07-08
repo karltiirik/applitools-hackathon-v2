@@ -7,6 +7,7 @@ import com.applitools.eyes.selenium.Eyes;
 import com.applitools.eyes.visualgrid.model.DeviceName;
 import com.applitools.eyes.visualgrid.model.ScreenOrientation;
 import com.applitools.eyes.visualgrid.services.VisualGridRunner;
+import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.WebDriverRunner;
 import org.junit.*;
 import org.openqa.selenium.By;
@@ -111,5 +112,6 @@ public class ModernTestsV2 {
         // find visual differences
         TestResultsSummary allTestResults = runner.getAllTestResults(false);
         System.out.println(allTestResults);
+        Selenide.closeWebDriver();
     }
 }
